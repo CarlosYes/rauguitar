@@ -1,0 +1,119 @@
+ <!DOCTYPE html>
+<html lang=pt-PT>
+<head>
+<title>Radio Amigos Unidos</title>
+<meta name="description" content="RAU" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv=X-UA-Compatible content="IE=Edge"/>
+<meta property="og:title" content="RAU Player" />
+<meta property="og:description" content="RAU" />
+<link rel="icon" type="image/png" href="https://i.imgur.com/nNh98kV.png" sizes="48x48" />
+<link rel="icon" type="image/png" href="https://i.imgur.com/nNh98kV.png" sizes="96x96" />
+<link rel="icon" type="image/png" href="https://i.imgur.com/nNh98kV.png" sizes="144x144" />
+<link rel="icon" type="image/png" href="https://i.imgur.com/nNh98kV.png" sizes="192x192" />
+<link rel="apple-touch-icon" href="https://i.imgur.com/nNh98kV.png" sizes="180x180"/>
+</div>
+<style>
+ 
+  body, html {
+ position: fixed;
+    margin: 0;
+ 
+    padding: 0;
+ 
+    height: 100vh;
+ 
+    background: transparent;
+ 
+    display: flex;
+ 
+    justify-content: center;
+ 
+    align-items: center;
+ 
+    overflow: hidden;
+ 
+  }
+  .container {
+ 
+    position: fixed;
+ 
+    width: 1308px;
+ 
+    height: 500px;
+ 
+  }
+  video.side-video {
+ 
+    position: fixed;
+ 
+    top: 70px;
+ 
+    width: 300px;
+ 
+    height: 500px;
+ 
+    object-fit: cover;
+ 
+    border-radius: 10px;
+ 
+    box-shadow: 0 0 15px rgba(255,255,255,0.3);
+ 
+    z-index: 1;
+ 
+  }
+  /* Avvicinati al centro */
+ 
+  .left-video {
+ 
+    left: 50px;
+ 
+  }
+  .right-video {
+ 
+    right: 50px;
+ 
+  }
+  img.center-image {
+ 
+    position: fixed;
+ 
+    top: 0;
+ 
+    left: 50%;
+ 
+    transform: translateX(-50%);
+ 
+    width: 728px;
+ 
+    height: 486px;
+ 
+    pointer-events: none;
+ 
+    user-select: none;
+ 
+    z-index: 10;
+ 
+  }
+</style>
+</head>
+<body>
+<div class="container">
+<!-- Video a sinistra -->
+<video class="side-video left-video" autoplay loop muted playsinline>
+<source src="https://i.imgur.com/MLCRq5C.mp4" type="video/mp4" />
+ 
+    seu navegador não suporta o vídeo
+</video>
+<!-- Immagen central -->
+<img class="center-image" src="https://xatimg.com/image/UNAiCmeXP6aw.png" alt="Immagine trasparente centro" />
+<!-- Video a destra -->
+<video class="side-video right-video" autoplay loop muted playsinline>
+<source src="https://i.imgur.com/MLCRq5C.mp4" type="video/mp4" />
+ 
+    seu navegador não suporta o vídeo
+</video>
+</div>
+</body>
+</html>
